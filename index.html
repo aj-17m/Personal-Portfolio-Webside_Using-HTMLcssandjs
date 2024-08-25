@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #020230;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #060a72;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: antiquewhite;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(130, 130, 225);
+            font-size: 1.04rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .leftsection {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .leftsection h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .leftsection .btn {
+            padding: 12px 20px;
+            background-color: #17139b;
+            color: rgb(221, 226, 230);
+            border: 3px solid white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .rightsection img {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .purplr {
+            color: rgb(127, 6, 240);
+        }
+
+        #element {
+            color: rgb(128, 11, 238);
+            font-size: 1.5rem;
+        }
+
+        .section2 {
+            max-width: 90vw;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section2 h1 {
+            font-size: 2rem;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .vertical {
+            text-align: center;
+        }
+
+        .vertical img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .vertical-title {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .vertical-desc {
+            color: grey;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+
+        footer {
+            background-color: #161627;
+            padding: 40px 0;
+            color: grey;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-right {
+            text-align: center;
+            padding: 12px;
+            font-size: smaller;
+            color: grey;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .firstsection .rightsection {
+                margin-top: 30px;
+            }
+
+            .box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ajay's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h1>Hi, My Name is <span class="purplr">Ajay</span></h1>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="https://static.vecteezy.com/system/resources/previews/011/153/368/original/3d-website-developer-working-on-laptop-illustration-png.png"
+                    alt="Developer Image">
+            </div>
+        </section>
+
+        <hr>
+
+        <div class="section2">
+            <span class="text-grey">What I Have Done So Far</span>
+            <h1>Work Experiences</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="https://static.vecteezy.com/system/resources/previews/011/153/368/original/3d-website-developer-working-on-laptop-illustration-png.png"
+                        alt="Work Experience">
+                    <div class="vertical-title">HTML Developer (2021-2023)</div>
+                    <div class="vertical-desc">Worked extensively on building semantic HTML structures and responsive layouts.</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="https://static.vecteezy.com/system/resources/previews/011/153/368/original/3d-website-developer-working-on-laptop-illustration-png.png"
+                        alt="Work Experience">
+                    <div class="vertical-title">React.js Developer (2023-present)</div>
+                    <div class="vertical-desc">Developing dynamic and scalable web applications using React.js.</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="https://static.vecteezy.com/system/resources/previews/011/153/368/original/3d-website-developer-working-on-laptop-illustration-png.png"
+                        alt="Work Experience">
+                    <div class="vertical-title">Node.js Developer (2023-present)</div>
+                    <div class="vertical-desc">Creating backend APIs and handling server-side operations using Node.js.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Ajay's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">Copyright &#169; www.ajay_portfolio || All Rights Reserved</div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
